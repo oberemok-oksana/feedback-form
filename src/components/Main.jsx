@@ -1,10 +1,9 @@
 import Form from "./Form";
-import SmallCloud from "./SmallCloud.styled";
+import SmallCloud from "./styled/SmallCloud.styled";
 import BigCloudOne from "./styled/BIgCloudOne.styled";
 import BigCloudThree from "./styled/BigCloudThree.styled";
 import BigCloudTwo from "./styled/BigCloudTwo.styled";
 import BigRedSmile from "./styled/BigRedSmile.styled";
-import GlobeImg from "./styled/GlobeImg.styled";
 import StyledMain from "./styled/StyledMain.styled";
 import StyledTitle from "./styled/StyledTitle.styled";
 import YellowSmileOne from "./styled/YellowSmileOne.styled";
@@ -22,8 +21,10 @@ const Main = () => {
       <BigCloudTwo src="../public/images/cloud-big.svg" alt="cloud" />
       <BigCloudThree src="../public/images/cloud-big.svg" alt="cloud" />
       <SmallCloud src="../public/images/cloud-small.svg" alt="cloud" />
-      <GlobeImg src="../public/images/Mask.svg" alt="globe" />
-      <BigRedSmile src="../public/images/red_cartoon3.svg" alt="red smile" />
+      <BigRedSmile>
+        <img src="../public/images/red_cartoon3.svg" alt="red smile" />
+      </BigRedSmile>
+
       <StyledTitle>Reach out to us</StyledTitle>
       <Form />
     </StyledMain>
