@@ -31,6 +31,30 @@ function App() {
           </button>
         </form>
       </main>
+      <footer className="footer">
+        <ul className="social-media-list">
+          <li>
+            <a href="https://www.instagram.com/">
+              <img src="/public/icons/instagram.svg" alt="instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/">
+              <img src="/public/icons/twitter.svg" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/">
+              <img src="/public/icons/facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/">
+              <img src="/public/icons/pinterest.svg" alt="pinterest" />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </>
   );
 }
