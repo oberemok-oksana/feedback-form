@@ -76,3 +76,15 @@
   font-size: 18px;
   color: #2d2d2d;
 }
+
+.form__btn {
+  background-color: #fad34f;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 25px 0;
+  border-radius: 500px;
+  max-width: 218px;
+  font-family: "Apercu Arabic Pro";
+  font-size: 18px;
+  margin-top: 23px;
+}
