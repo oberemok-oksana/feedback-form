@@ -7,7 +7,10 @@ import StyledList from "./styled/StyledList.styled";
 const Footer = () => {
   return (
     <StyledFooter>
-      <FooterRedSmile src="../public/images/red_cartoon3.svg" alt="red smile" />
+      <FooterRedSmile>
+        <img src="../public/images/red_cartoon3.svg" alt="red smile" />
+      </FooterRedSmile>
+
       <FooterYellowSmile
         src="../public/images/red_cartoon.svg"
         alt="yellow smile"
