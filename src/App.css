@@ -36,12 +36,19 @@
 
 @font-face {
   font-family: "Apercu Arabic Pro";
-  src: url("ApercuArabicPro-Bold.eot");
+  src: url("../public/fonts/ApercuArabicPro-Bold.eot");
   src: local("Apercu Arabic Pro Bold"), local("ApercuArabicPro-Bold"),
-    url("ApercuArabicPro-Bold.eot?#iefix") format("embedded-opentype"),
-    url("ApercuArabicPro-Bold.woff2") format("woff2"),
-    url("ApercuArabicPro-Bold.woff") format("woff"),
-    url("ApercuArabicPro-Bold.ttf") format("truetype");
+    url("../public/fonts/ApercuArabicPro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/ApercuArabicPro-Bold.woff2") format("woff2"),
+    url("../public/fonts/ApercuArabicPro-Bold.woff") format("woff"),
+    url("../public/fonts/ApercuArabicPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+}
+
+.title {
+  font-family: "Apercu Arabic Pro";
+  color: #3e3e3e;
+  font-size: 40px;
 }
