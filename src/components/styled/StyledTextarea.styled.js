@@ -7,6 +7,10 @@ const StyledTextarea = styled.textarea`
   font-family: "Apercu Arabic Pro";
   font-size: 18px;
   color: #2d2d2d;
+
+  @media (max-width: 600px) {
+    padding: 10px 25px;
+  } ;
 `;
 
 export default StyledTextarea;

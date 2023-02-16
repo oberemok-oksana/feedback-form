@@ -7,6 +7,10 @@ const YellowSmileOne = styled.img`
   top: 6.55%;
   bottom: 85.84%;
   transform: rotate(-35.19deg);
+
+  @media (max-width: 992px) {
+    z-index: -1;
+  }
 `;
 
 export default YellowSmileOne;

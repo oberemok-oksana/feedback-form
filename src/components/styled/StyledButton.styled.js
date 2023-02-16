@@ -16,5 +16,9 @@ const StyledButton = styled.button`
     color: #222222;
     transition: all 0.5s ease;
   }
+
+  @media (max-width: 600px) {
+    padding: 15px;
+  } ;
 `;
 export default StyledButton;
