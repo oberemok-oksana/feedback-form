@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <main className="main-section">
+      <main className="container">
         <h1 className="title">Reach out to us</h1>
         <form className="form">
           <input
