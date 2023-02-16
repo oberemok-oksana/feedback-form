@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FooterRedSmile = styled.img`
+const FooterRedSmile = styled.div`
   position: absolute;
   left: 2%;
   top: -15%;
