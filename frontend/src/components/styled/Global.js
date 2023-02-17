@@ -4,52 +4,52 @@ const GlobalStyles = createGlobalStyle`
 
 @font-face {
   font-family: "Apercu Arabic Pro";
-  src: url("../public/fonts/ApercuArabicPro-Regular.eot");
+  src: url("../fonts/ApercuArabicPro-Regular.eot");
   src: local("Apercu Arabic Pro Regular"), local("ApercuArabicPro-Regular"),
-    url("../public/fonts/ApercuArabicPro-Regular.eot?#iefix")
+    url("../fonts/ApercuArabicPro-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../public/fonts/ApercuArabicPro-Regular.woff2") format("woff2"),
-    url("../public/fonts/ApercuArabicPro-Regular.woff") format("woff"),
-    url("../public/fonts/ApercuArabicPro-Regular.ttf") format("truetype");
+    url("../fonts/ApercuArabicPro-Regular.woff2") format("woff2"),
+    url("../fonts/ApercuArabicPro-Regular.woff") format("woff"),
+    url("../fonts/ApercuArabicPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Apercu Arabic Pro";
-  src: url("../public/fonts/ApercuArabicPro-Medium.eot");
+  src: url("../fonts/ApercuArabicPro-Medium.eot");
   src: local("Apercu Arabic Pro Medium"), local("ApercuArabicPro-Medium"),
-    url("../public/fonts/ApercuArabicPro-Medium.eot?#iefix")
+    url("../fonts/ApercuArabicPro-Medium.eot?#iefix")
       format("embedded-opentype"),
-    url("../public/fonts/ApercuArabicPro-Medium.woff2") format("woff2"),
-    url("../public/fonts/ApercuArabicPro-Medium.woff") format("woff"),
-    url("../public/fonts/ApercuArabicPro-Medium.ttf") format("truetype");
+    url("../fonts/ApercuArabicPro-Medium.woff2") format("woff2"),
+    url("../fonts/ApercuArabicPro-Medium.woff") format("woff"),
+    url("../fonts/ApercuArabicPro-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Apercu Arabic Pro";
-  src: url("../public/fonts/ApercuArabicPro-Light.eot");
+  src: url("../fonts/ApercuArabicPro-Light.eot");
   src: local("Apercu Arabic Pro Light"), local("ApercuArabicPro-Light"),
-    url("../public/fonts/ApercuArabicPro-Light.eot?#iefix")
+    url("../fonts/ApercuArabicPro-Light.eot?#iefix")
       format("embedded-opentype"),
-    url("../public/fonts/ApercuArabicPro-Light.woff2") format("woff2"),
-    url("../public/fonts/ApercuArabicPro-Light.woff") format("woff"),
-    url("../public/fonts/ApercuArabicPro-Light.ttf") format("truetype");
+    url("../fonts/ApercuArabicPro-Light.woff2") format("woff2"),
+    url("../fonts/ApercuArabicPro-Light.woff") format("woff"),
+    url("../fonts/ApercuArabicPro-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Apercu Arabic Pro";
-  src: url("../public/fonts/ApercuArabicPro-Bold.eot");
+  src: url("../fonts/ApercuArabicPro-Bold.eot");
   src: local("Apercu Arabic Pro Bold"), local("ApercuArabicPro-Bold"),
-    url("../public/fonts/ApercuArabicPro-Bold.eot?#iefix")
+    url("../fonts/ApercuArabicPro-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../public/fonts/ApercuArabicPro-Bold.woff2") format("woff2"),
-    url("../public/fonts/ApercuArabicPro-Bold.woff") format("woff"),
-    url("../public/fonts/ApercuArabicPro-Bold.ttf") format("truetype");
+    url("../fonts/ApercuArabicPro-Bold.woff2") format("woff2"),
+    url("../fonts/ApercuArabicPro-Bold.woff") format("woff"),
+    url("../fonts/ApercuArabicPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }

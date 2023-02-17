@@ -1,11 +1,17 @@
 const express = require("express");
 const yup = require("yup");
 const Pool = require("pg").Pool;
-
+const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
 app.use(express.json());
+
+app.use(
+  cors({
+    origin: process.env.CORS_ORIGIN,
+  })
+);
 
 const db = new Pool();
 

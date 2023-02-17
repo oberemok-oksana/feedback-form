@@ -12,17 +12,14 @@ import YellowSmileTwo from "./styled/YellowSmileTwo.styled";
 const Main = () => {
   return (
     <StyledMain>
-      <YellowSmileOne
-        src="../public/images/red_cartoon.svg"
-        alt="yellow smile"
-      />
-      <YellowSmileTwo src="../public/images/goodie1.svg" alt="yellow smile" />
-      <BigCloudOne src="../public/images/cloud-big.svg" alt="cloud" />
-      <BigCloudTwo src="../public/images/cloud-big.svg" alt="cloud" />
-      <BigCloudThree src="../public/images/cloud-big.svg" alt="cloud" />
-      <SmallCloud src="../public/images/cloud-small.svg" alt="cloud" />
+      <YellowSmileOne src="../images/red_cartoon.svg" alt="yellow smile" />
+      <YellowSmileTwo src="../images/goodie1.svg" alt="yellow smile" />
+      <BigCloudOne src="../images/cloud-big.svg" alt="cloud" />
+      <BigCloudTwo src="../images/cloud-big.svg" alt="cloud" />
+      <BigCloudThree src="../images/cloud-big.svg" alt="cloud" />
+      <SmallCloud src="../images/cloud-small.svg" alt="cloud" />
       <BigRedSmile>
-        <img src="../public/images/red_cartoon3.svg" alt="red smile" />
+        <img src="../images/red_cartoon3.svg" alt="red smile" />
       </BigRedSmile>
 
       <StyledTitle>Reach out to us</StyledTitle>
