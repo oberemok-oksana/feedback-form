@@ -1,51 +1,73 @@
-import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import StyledButton from "./styled/StyledButton.styled";
 import StyledForm from "./styled/StyledForm.styled";
 import StyledInput from "./styled/StyledInput.styled";
 import StyledTextarea from "./styled/StyledTextarea.styled";
 
 const Form = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const notify = () =>
+    toast("🦄 Thank you for your feedback!", {
+      position: "top-center",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
 
-  const changeName = () => {
-    setName(e.target.value);
-  };
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
-  const changeEmail = () => {
-    setEmail(e.target.value);
-  };
-
-  const changeMessage = () => {
-    setMessage(e.target.value);
+  const submitForm = (feedback) => {
+    fetch("http://localhost:3000/feedbacks", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(feedback),
+    });
+    reset();
   };
 
   return (
-    <StyledForm>
+    <StyledForm onSubmit={handleSubmit(submitForm)} noValidate>
+      <ToastContainer />
       <StyledInput
-        value={name}
-        onChange={changeName}
+        {...register("name", { required: true })}
         type="text"
         placeholder="Your name*"
-        required
+        error={errors.name}
       />
+      {errors.name ? <span>Name is required</span> : null}
+
       <StyledInput
-        value={email}
-        onChange={changeEmail}
+        {...register("email", { email: true, required: true })}
         type="email"
         placeholder="Your e-mail*"
-        required
+        error={errors.email}
       />
+      {errors.email ? <span>Valid email is required</span> : null}
+
       <StyledTextarea
-        value={message}
-        onChange={changeMessage}
+        {...register("message", { required: true })}
         cols="30"
         rows="6"
         placeholder="Your message*"
-        required
+        error={errors.message}
       />
-      <StyledButton type="submit">Send message</StyledButton>
+      {errors.message ? <span>Please fill in your message</span> : null}
+
+      <StyledButton type="submit" onClick={notify}>
+        Send message
+      </StyledButton>
     </StyledForm>
   );
 };
