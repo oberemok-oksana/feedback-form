@@ -1,6 +1,6 @@
 import Form from "./Form";
 import SmallCloud from "./styled/SmallCloud.styled";
-import BigCloudOne from "./styled/BIgCloudOne.styled";
+import BigCloudOne from "./styled/BigCloudOne.styled";
 import BigCloudThree from "./styled/BigCloudThree.styled";
 import BigCloudTwo from "./styled/BigCloudTwo.styled";
 import BigRedSmile from "./styled/BigRedSmile.styled";
