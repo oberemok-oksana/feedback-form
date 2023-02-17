@@ -10,12 +10,10 @@ const StyledMain = styled.section`
   min-height: 928px;
 
   @media (max-width: 992px) {
-    padding-left: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    min-height: 600px;
   }
-
-  @media (max-width: 600px) {
-    padding-left: 20px;
-  } ;
 `;
 
 export default StyledMain;

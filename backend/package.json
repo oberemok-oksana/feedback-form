@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "migrate": "node-pg-migrate",
+    "build": "node-pg-migrate up",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -17,6 +17,10 @@ const StyledButton = styled.button`
     transition: all 0.5s ease;
   }
 
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
   @media (max-width: 600px) {
     padding: 15px;
   } ;

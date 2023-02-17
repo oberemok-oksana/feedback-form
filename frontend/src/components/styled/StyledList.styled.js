@@ -13,6 +13,7 @@ const StyledList = styled.ul`
   position: relative;
 
   @media (max-width: 600px) {
+    padding-top: 0;
     justify-content: center;
     padding-left: 0;
   }

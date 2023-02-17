@@ -5,7 +5,7 @@ const FooterRedSmile = styled.div`
   left: 2%;
   top: -15%;
 
-  @media (max-width: 600px) {
+  @media (max-width: 992px) {
     display: none;
   }
 `;

@@ -27,7 +27,7 @@ const Form = () => {
   } = useForm();
 
   const submitForm = (feedback) => {
-    fetch("http://localhost:3000/feedbacks", {
+    fetch(`${import.meta.env.VITE_API_URL}/feedbacks`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,41 +40,43 @@ const Form = () => {
   };
 
   return (
-    <StyledForm onSubmit={handleSubmit(submitForm)} noValidate>
+    <>
       <ToastContainer />
-      <StyledInput
-        {...register("name", { required: true })}
-        type="text"
-        placeholder="Your name*"
-        error={errors.name}
-      />
-      {errors.name ? <span>Name is required</span> : null}
+      <StyledForm onSubmit={handleSubmit(submitForm)} noValidate>
+        <StyledInput
+          {...register("name", { required: true })}
+          type="text"
+          placeholder="Your name*"
+          error={errors.name}
+        />
+        {errors.name ? <span>Name is required</span> : null}
 
-      <StyledInput
-        {...register("email", {
-          pattern: {
-            value: /\S+@\S+\.\S+/,
-            message: "Entered value does not match email format",
-          },
-          required: true,
-        })}
-        type="email"
-        placeholder="Your e-mail*"
-        error={errors.email}
-      />
-      {errors.email ? <span>Valid email is required</span> : null}
+        <StyledInput
+          {...register("email", {
+            pattern: {
+              value: /\S+@\S+\.\S+/,
+              message: "Entered value does not match email format",
+            },
+            required: true,
+          })}
+          type="email"
+          placeholder="Your e-mail*"
+          error={errors.email}
+        />
+        {errors.email ? <span>Valid email is required</span> : null}
 
-      <StyledTextarea
-        {...register("message", { required: true })}
-        cols="30"
-        rows="6"
-        placeholder="Your message*"
-        error={errors.message}
-      />
-      {errors.message ? <span>Please fill in your message</span> : null}
+        <StyledTextarea
+          {...register("message", { required: true })}
+          cols="30"
+          rows="6"
+          placeholder="Your message*"
+          error={errors.message}
+        />
+        {errors.message ? <span>Please fill in your message</span> : null}
 
-      <StyledButton type="submit">Send message</StyledButton>
-    </StyledForm>
+        <StyledButton type="submit">Send message</StyledButton>
+      </StyledForm>
+    </>
   );
 };
 

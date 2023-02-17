@@ -17,5 +17,5 @@ exports.up = (pgm) => {
 };
 
 exports.down = (pgm) => {
-  pgm.deleteTable("feedback");
+  pgm.dropTable("feedbacks");
 };

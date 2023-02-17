@@ -1,6 +1,7 @@
 const express = require("express");
 const yup = require("yup");
 const Pool = require("pg").Pool;
+
 require("dotenv").config();
 
 const app = express();
@@ -8,16 +9,14 @@ app.use(express.json());
 
 const db = new Pool();
 
-const port = 3000;
-
 const feedbackSchema = yup.object({
   name: yup.string().required(),
   email: yup.string().email(),
   message: yup.string().required(),
 });
 
-app.get("/", (req, res) => {
-  res.send("Hello you there!");
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
 });
 
 app.post("/feedbacks", async (req, res) => {
@@ -35,6 +34,6 @@ app.post("/feedbacks", async (req, res) => {
   }
 });
 
-app.listen(port, (req, res) => {
+app.listen(process.env.APP_PORT, (req, res) => {
   console.log("Yeah. Im working now.");
 });

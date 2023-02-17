@@ -6,3 +6,19 @@ Content-Type: application/json
   "email":"booba@gmail.com",
   "message":"Ok ok ok ok ok ok "
 }
+
+###
+GET http://localhost:3000/health
+
+###
+POST https://zenbittech-feedback.onrender.com/feedbacks
+Content-Type: application/json
+
+{
+  "name":"fffff",
+  "email":"booba@gmail.com",
+  "message":"Ok ok ok ok ok ok "
+}
+
+###
+GET http://zenbittech-feedback.onrender.com/health
