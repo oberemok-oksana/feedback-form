@@ -18,22 +18,22 @@ const Footer = () => {
       <FooterGreenSmile src="../public/images/green.svg" alt="green smile" />
       <StyledList>
         <li>
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/" target="_blank">
             <img src="/public/icons/instagram.svg" alt="instagram" />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/">
+          <a href="https://twitter.com/" target="_blank">
             <img src="/public/icons/twitter.svg" alt="twitter" />
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/">
+          <a href="https://www.facebook.com/" target="_blank">
             <img src="/public/icons/facebook.svg" alt="facebook" />
           </a>
         </li>
         <li>
-          <a href="https://www.pinterest.com/">
+          <a href="https://www.pinterest.com/" target="_blank">
             <img src="/public/icons/pinterest.svg" alt="pinterest" />
           </a>
         </li>
