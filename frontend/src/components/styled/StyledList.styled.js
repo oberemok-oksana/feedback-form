@@ -11,6 +11,11 @@ const StyledList = styled.ul`
   gap: 25px;
   z-index: 5;
   position: relative;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    padding-left: 0;
+  }
 `;
 
 export default StyledList;
