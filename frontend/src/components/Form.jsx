@@ -33,8 +33,10 @@ const Form = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(feedback),
+    }).then(() => {
+      notify();
+      reset();
     });
-    reset();
   };
 
   return (
@@ -49,7 +51,13 @@ const Form = () => {
       {errors.name ? <span>Name is required</span> : null}
 
       <StyledInput
-        {...register("email", { email: true, required: true })}
+        {...register("email", {
+          pattern: {
+            value: /\S+@\S+\.\S+/,
+            message: "Entered value does not match email format",
+          },
+          required: true,
+        })}
         type="email"
         placeholder="Your e-mail*"
         error={errors.email}
@@ -65,9 +73,7 @@ const Form = () => {
       />
       {errors.message ? <span>Please fill in your message</span> : null}
 
-      <StyledButton type="submit" onClick={notify}>
-        Send message
-      </StyledButton>
+      <StyledButton type="submit">Send message</StyledButton>
     </StyledForm>
   );
 };
